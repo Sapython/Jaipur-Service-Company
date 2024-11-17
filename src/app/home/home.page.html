@@ -1,0 +1,114 @@
+<div class="mainContainer">
+  <div class="header">
+    <div class="icon"  class="menu"
+    (click)="side()">
+      <img src="../../assets/images/Mask group (2).svg" alt="">
+    </div>
+
+    <div class="notification">
+      <div class="wallet">
+        <ion-icon name="wallet-outline" style="padding-top: 2px"></ion-icon
+        >&nbsp;
+        <span>₹1,560</span>
+      </div>
+      <span id="notify"
+        ><img src="assets/images/notification.png" alt=""
+      /></span>
+    </div>
+  </div>
+
+  <div class="wish">
+    <div class="time">
+      <div>
+        <h2>Good Morning</h2>
+      </div>
+      <div style="color: #181f29">Avirag Gupta</div>
+    </div>
+    <div class="logo">
+      <img src="assets/images/sun.png" alt="" />
+    </div>
+  </div>
+
+  <div class="today">
+    <div>
+      <h6 style="margin: 0">Select Working Day</h6>
+    </div>
+    <div class="day-date">
+      <div class="from">
+        <h4>Tue, Feb 2022</h4>
+        <h6>Working</h6>
+      </div>
+      <div class="to">
+        <h4>Web, Feb 2022</h4>
+        <h6>Working</h6>
+      </div>
+      <span><ion-icon name="calendar-outline"></ion-icon></span>
+    </div>
+  </div>
+
+  <div class="today-jobs">
+    <span>Today Jobs</span>
+    <ion-icon name="chevron-forward-outline"></ion-icon>
+  </div>
+
+  <div class="new-jobs">
+    <div><h2>New Jobs</h2></div>
+    <div>
+      <h6>See All <ion-icon name="chevron-forward-outline"></ion-icon></h6>
+    </div>
+  </div>
+
+  <div class="booking">
+    <div
+      style="padding: 0px 10px; background-color: #fff; cursor: pointer"
+      *ngFor="let info of data"
+      (click)="route()"
+    >
+      <ion-card-subtitle style="display: flex; justify-content: space-between">
+        <h6>Booking ID - {{info.id}}</h6>
+        <h6 style="color: green">{{info.amount}}</h6>
+      </ion-card-subtitle>
+      <ion-card-content style="padding: 0">
+        <div class="row-1">
+          <span class="head">{{info.name}}</span>
+          <span class="head">Job Duration</span>
+        </div>
+        <div class="row-2">
+          <span class="body"
+            ><ion-icon name="location-outline"></ion-icon>{{info.address}}</span
+          >
+          <span class="body"
+            ><ion-icon name="time-outline"></ion-icon>{{info.time}}</span
+          >
+        </div>
+        <div class="row-3">
+          <span class="head">Service Time</span>
+          <span class="head">Distance</span>
+        </div>
+        <div class="row-4">
+          <span class="body"
+            ><ion-icon name="time-outline"></ion-icon>{{info.time}}</span
+          >
+          <span class="body"
+            ><ion-icon name="location-outline"></ion-icon
+            >{{info.distance}}</span
+          >
+        </div>
+        <h2>View Details</h2>
+      </ion-card-content>
+    </div>
+  </div>
+</div>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <div class="footer">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-icon name="calendar-outline"></ion-icon>
+        <ion-icon name="time-outline"></ion-icon>
+        <ion-icon name="wallet-outline"></ion-icon>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,62 @@
+<div class="main">
+  <ion-header [translucent]="true">
+    <ion-toolbar class="toolbar">
+      <!-- Back Button with Text -->
+
+      <ion-icon
+        name="arrow-back-outline"
+        class="back-icon"
+        (click)="back()"
+      ></ion-icon
+      ><span class="identity-verification">Identity Section</span>
+      <!-- Wallet and Notification -->
+      <div class="notification">
+        <div class="wallet">
+          <ion-icon
+            name="wallet-outline"
+            style="
+              padding-top: 2px;
+              color: #181f29;
+              margin-left: 5px;
+              margin-top: -1px;
+              width: 20px;
+              height: 20px;
+              flex-shrink: 0;
+            "
+          ></ion-icon
+          >&nbsp;
+          <span
+            style="
+              color: #181f29;
+              font-size: small;
+              font-family: Lato;
+              font-weight: 600;
+              margin-top: 0px;
+              margin-left: 2px;
+            "
+            >₹1,560</span
+          >
+        </div>
+        <span id="notify"
+          ><img src="assets/images/notification.png" alt=""
+        /></span>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <!-- Doc Pics -->
+  <ion-card class="pic-card">
+    <ion-card-title style="font-size: 16px;margin-left: 20px;">
+        Type of ID
+    </ion-card-title>
+    <ion-card-subtitle style="font-size: 12px;margin-left: 22px;margin-bottom: 5px;">
+      Aadhar Card
+    </ion-card-subtitle>
+    <ion-thumbnail class="aadhar">
+      <img alt="Silhouette of mountains" src="../../assets/images/aadhar.png" />
+    </ion-thumbnail >
+    <ion-thumbnail class="aadhar">
+      <img alt="Silhouette of mountains" src="../../assets/images/aadhar.png" />
+    </ion-thumbnail >
+  </ion-card>
+  <!-- Main div -->
+</div>

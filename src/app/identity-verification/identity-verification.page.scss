@@ -1,0 +1,96 @@
+* {
+  padding-top: 3px;
+  font-family: Lato;
+  cursor: pointer;
+}
+.main {
+  background-color: #f7f7f7;
+  height: 100%;
+  overflow-y: scroll;
+}
+.toolbar {
+  --background: #fff;
+  box-shadow: none;
+  margin-top: -8px;
+}
+.notification {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  margin-top: 5px;
+}
+.wallet {
+  display: flex;
+  border: 1px solid rgb(215, 215, 215);
+  padding: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 150px;
+  width: 82px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+#notify {
+  margin-left: 10px;
+  margin-top: -4px;
+  margin-right: 8px;
+}
+.back-icon {
+  width: 37px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #181f29;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 0;
+}
+.identity-verification {
+  color: var(--primary, #181f29);
+  font-size: 16px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 0;
+}
+.id-card {
+  height: 50px;
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 2px;
+  border: 1px solid var(--line, #e9e9e9);
+  box-shadow: none;
+}
+.idc-card {
+  height: 50px;
+  width: 100%;
+  margin-left: 0px;
+  margin-top: -9px;
+  border: 1px solid var(--line, #e9e9e9);
+  box-shadow: none;
+}
+.component-titles {
+  font-size: 14px;
+  color: var(--primary, #1a1d1f);
+  margin-top: -34px;
+  margin-left: 30px;
+  line-height: 30px;
+  letter-spacing: -0.14px;
+}
+.tick-icon {
+  color: #579540;
+  width: 20px;
+  height: 30px;
+  vertical-align: middle;
+}
+.rightarrow-icon {
+  margin-left: 310px;
+  margin-top: -27px;
+  color: #000;
+  font-size: 20px;
+}

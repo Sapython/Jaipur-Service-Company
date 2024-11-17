@@ -1,0 +1,200 @@
+<div class="main">
+  <ion-header [translucent]="true">
+    <ion-toolbar class="toolbar">
+      <!-- Back Button with Text -->
+
+      <ion-icon
+        name="arrow-back-outline"
+        class="back-icon"
+        (click)="back()"
+      ></ion-icon
+      ><span class="Edit-profile">Edit Profile</span>
+      <!-- Wallet and Notification -->
+      <div class="notification">
+        <div class="wallet">
+          <ion-icon
+            name="wallet-outline"
+            style="
+              padding-top: 2px;
+              color: #181f29;
+              margin-left: 5px;
+              margin-top: -1px;
+              width: 20px;
+              height: 20px;
+              flex-shrink: 0;
+            "
+          ></ion-icon
+          >&nbsp;
+          <span
+            style="
+              color: #181f29;
+              font-size: small;
+              font-family: Lato;
+              font-weight: 600;
+              margin-top: 0px;
+              margin-left: 2px;
+            "
+            >₹1,560</span
+          >
+        </div>
+        <span id="notify"
+          ><img src="assets/images/notification.png" alt=""
+        /></span>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Profile pic & name -->
+  <ion-card class="profile-card">
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img
+          alt="Silhouette of mountains"
+          src="../../assets/images/Profil picture.png"
+          class="profile-img"
+        />
+      </ion-thumbnail>
+      <ion-label style="margin-top: -30px; margin-left: 8px"
+        >Himanshu Rathore</ion-label
+      >
+      <ion-card-content
+        style="
+          display: flex;
+          position: absolute;
+          margin-top: 20px;
+          margin-left: -10px;
+          font-weight: 600;
+          font-size: 12px;
+          letter-spacing: 1px;
+        "
+      >
+        <span
+          ><img
+            src="../../assets/images/filled.png"
+            style="margin-top: -10px; margin-right: 3px" /></span
+        >4.5 (87)</ion-card-content
+      >
+    </ion-item>
+  </ion-card>
+
+  <!-- Rating -->
+  <ion-card class="rating-card">
+    <ion-card-header>
+      <ion-card-title style="display: inline; float: left; font-size: 14px"
+        >My Rating</ion-card-title
+      >
+      <ion-card-subtitle>My Latest 100 Rating</ion-card-subtitle>
+
+      <ion-card-subtitle style="float: left; display: inline; font-size: 12px"
+        ><span
+          ><img
+            src="../../assets/images/filled.png"
+            style="margin-top: -5px; margin-right: 3px" /></span
+        ><span class="rating-num-two">4.5</span>
+      </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <!-- Contact Details -->
+  <ion-card class="contact-card" style="margin-top: 10px">
+    <ion-card-header>
+      <ion-card-title
+        style="
+          display: inline;
+          float: left;
+          font-size: 14px;
+          color: var(--primary, #1a1d1f);
+        "
+        >Contact Details</ion-card-title
+      >
+      <ion-card-subtitle>Phone</ion-card-subtitle>
+
+      <ion-card-subtitle
+        style="
+          float: left;
+          display: inline;
+          color: var(--primary, #1a1d1f);
+          margin-top: 0px;
+        "
+      >
+        <span class="phone">+91 858569322</span>
+      </ion-card-subtitle>
+      <ion-card-subtitle>Email</ion-card-subtitle>
+
+      <ion-card-subtitle
+        style="
+          float: left;
+          display: inline;
+          font-size: 14px;
+          color: var(--primary, #1a1d1f);
+          margin-top: 0px;
+        "
+      >
+        <span class="email">example@gmail.com</span>
+      </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <!-- Award & certificate -->
+  <ion-card class="award-certificate-card">
+    <ion-header>
+      <ion-card-title
+        style="
+          font-size: 14px;
+          color: var(--primary, #1a1d1f);
+          margin-left: 20px;
+        "
+      >
+        Award & certificate photos
+      </ion-card-title>
+    </ion-header>
+    <ion-thumbnail class="certificate-pics" style="display: inline-block">
+      <img alt="Silhouette of mountains" src="../../assets/images/C1.png" />
+    </ion-thumbnail>
+    <ion-thumbnail class="certificate-pics" style="display: inline-block">
+      <img alt="Silhouette of mountains" src="../../assets/images/C2.png" />
+    </ion-thumbnail>
+    <ion-thumbnail class="certificate-pics" style="display: inline-block">
+      <img alt="Silhouette of mountains" src="../../assets/images/C3.png" />
+    </ion-thumbnail>
+    <ion-card-title (click)="award()"
+      style="
+        color: var(--tertiary, #5e0080);
+        margin-left: 20px;
+        margin-top: 3px;
+        font-size: 14px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.14px;
+      "
+      >View More</ion-card-title
+    >
+  </ion-card>
+  <!-- Identity Verification -->
+  <ion-card class="id-card" (click)="identity()">
+    <ion-card-header>
+      <ion-card-title
+        style="
+          font-size: 14px;
+          color: var(--primary, #1a1d1f);
+
+          line-height: normal;
+          letter-spacing: -0.14px;
+        "
+        >Identity Verification</ion-card-title
+      ><ion-icon
+        name="chevron-forward-outline"
+        style="
+          margin-left: 310px;
+          margin-top: -10px;
+          color: #000;
+          font-size: 20px;
+        "
+      ></ion-icon>
+      <ion-card-subtitle style="margin-top: -10px"
+        >Identity proof and Personal Details</ion-card-subtitle
+      >
+    </ion-card-header>
+  </ion-card>
+  <!-- Main container div -->
+</div>

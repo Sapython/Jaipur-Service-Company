@@ -1,0 +1,181 @@
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <!-- Signout button -->
+    <ion-button fill="clear" id="open-modal" expand="block"
+      ><span
+        ><img
+          src="../../assets/images/Icons (3).svg"
+          alt=""
+          style="margin-top: 5px; margin-right: 7px"
+      /></span>
+      Sign out</ion-button
+    >
+    <!-- Signout modal -->
+    <ion-modal
+      trigger="open-modal"
+      [initialBreakpoint]="1"
+      [breakpoints]="[0, 1]"
+    >
+      <ng-template>
+        <ion-card-title
+          style="
+            font-size: 30px;
+            color: #f75555;
+            text-align: center;
+            margin-top: 20px;
+          "
+          >Logout</ion-card-title
+        >
+        <ion-item-divider></ion-item-divider>
+        <ion-card-subtitle
+          style="
+            text-align: center;
+            margin-top: 10px;
+            color: #181f29;
+            font-weight: 600;
+            font-size: 16px;
+            font-style: normal;
+            margin-bottom: 20px;
+          "
+          >Are you sure want to Logout ?</ion-card-subtitle
+        >
+        <div style="padding-bottom: 20px">
+          <ion-button class="cancel-btn" fill="clear" (click)="closeModal()"
+            >Cancel</ion-button
+          >
+          <ion-button class="logout-btn" (click)="logout()" fill="clear"
+            >Yes , Logout
+          </ion-button>
+        </div>
+      </ng-template>
+    </ion-modal>
+
+    <!-- Close Icon -->
+    <ion-button fill="clear" class="close-btn" (click)="close()">
+      <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+    </ion-button>
+    <!-- Profile -->
+    <img src="../../assets/images/Profil picture.png" class="profile-pic" />
+    <h4 style="text-align: center; color: #fff">Himanshu Rathore</h4>
+    <span
+      ><img src="../../assets/images/filled.png" style="margin-left: 140px"
+    /></span>
+    <p
+      style="
+        margin-top: -20px;
+        text-align: center;
+        color: #fff;
+        margin-left: 10px;
+      "
+    >
+      4.5 (87)
+    </p>
+  </ion-card>
+  <!-- Navigating buttons -->
+
+  <ion-button
+    expand="block"
+    fill="clear"
+    type="outline"
+    style="text-transform: none"
+    class="edit-profile"
+    (click)="editProfile()"
+    ><ion-icon
+      name="person-outline"
+      style="margin-right: 20px; margin-left: -20px"
+    ></ion-icon
+    ><span style="margin-right: 180px">Edit Profile</span></ion-button
+  >
+  <ion-button
+    expand="block"
+    fill="clear"
+    style="text-transform: none"
+    class="job-history"
+    (click)="job()"
+    ><ion-icon
+      name="bag-handle-outline"
+      style="margin-right: 20px; margin-left: -20px"
+    ></ion-icon
+    ><span style="margin-right: 175px">Job History</span></ion-button
+  >
+  <ion-button
+    expand="block"
+    fill="clear"
+    style="text-transform: none"
+    class="money"
+    ><ion-icon
+      name="cash-outline"
+      style="margin-right: 20px; margin-left: -20px"
+    ></ion-icon
+    ><span style="margin-right: 208px">Money</span></ion-button
+  >
+  <ion-button
+    expand="block"
+    fill="clear"
+    style="text-transform: none"
+    class="wallet"
+    ><ion-icon
+      name="wallet-outline"
+      style="margin-right: 20px; margin-left: -20px"
+    ></ion-icon
+    ><span style="margin-right: 209px">Wallet</span></ion-button
+  >
+  <ion-button
+    expand="block"
+    fill="clear"
+    style="text-transform: none"
+    class="notification"
+    ><ion-icon
+      name="notifications-outline"
+      style="margin-right: 20px; margin-left: -20px"
+    ></ion-icon
+    ><span style="margin-right: 163px">Notifications</span></ion-button
+  >
+  <ion-button
+    expand="block"
+    fill="clear"
+    style="text-transform: none"
+    class="financial"
+    (click)="financial()"
+    ><ion-icon
+      name="card-outline"
+      style="margin-right: 20px; margin-left: -20px"
+    ></ion-icon
+    ><span style="margin-right: 138px">Financial Details</span></ion-button
+  >
+  <ion-button
+    expand="block"
+    fill="clear"
+    style="text-transform: none"
+    class="change-language"
+    ><ion-icon
+      name="language-outline"
+      style="margin-right: 20px; margin-left: -20px"
+    ></ion-icon
+    ><span style="margin-right: 135px">Change Language</span></ion-button
+  >
+  <ion-button
+    expand="block"
+    fill="clear"
+    style="text-transform: none"
+    class="about"
+    ><ion-icon
+      name="alert-circle-outline"
+      style="margin-right: 20px; margin-left: -20px"
+    ></ion-icon
+    ><span style="margin-right: 195px">About us</span></ion-button
+  >
+  <ion-button
+    expand="block"
+    fill="clear"
+    style="margin-bottom: 100px; text-transform: none"
+    class="contact"
+    ><ion-icon
+      name="call-outline"
+      style="margin-right: 20px; margin-left: -20px"
+    ></ion-icon
+    ><span style="margin-right: 185px">Contact us</span></ion-button
+  >
+</ion-content>
+
+<ion-header> </ion-header>

@@ -1,0 +1,90 @@
+<div class="main">
+  <ion-header [translucent]="true">
+    <ion-toolbar class="toolbar">
+      <!-- Back Button with Text -->
+
+      <ion-icon
+        name="arrow-back-outline"
+        class="back-icon"
+        (click)="back()"
+      ></ion-icon
+      ><span class="identity-verification">Identity Verification</span>
+      <!-- Wallet and Notification -->
+      <div class="notification">
+        <div class="wallet">
+          <ion-icon
+            name="wallet-outline"
+            style="
+              padding-top: 2px;
+              color: #181f29;
+              margin-left: 5px;
+              margin-top: -1px;
+              width: 20px;
+              height: 20px;
+              flex-shrink: 0;
+            "
+          ></ion-icon
+          >&nbsp;
+          <span
+            style="
+              color: #181f29;
+              font-size: small;
+              font-family: Lato;
+              font-weight: 600;
+              margin-top: 0px;
+              margin-left: 2px;
+            "
+            >₹1,560</span
+          >
+        </div>
+        <span id="notify"
+          ><img src="assets/images/notification.png" alt=""
+        /></span>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <!-- Id verification components -->
+  <ion-card class="id-card" (click)="section()">
+    <ion-card-header>
+      <ion-icon class="tick-icon" name="checkmark-circle"></ion-icon>
+      <ion-card-title class="component-titles">Identity Proof</ion-card-title
+      ><ion-icon
+        class="rightarrow-icon"
+        name="chevron-forward-outline"
+      ></ion-icon>
+    </ion-card-header>
+  </ion-card>
+  <!-- Personal Details -->
+  <ion-card class="idc-card">
+    <ion-card-header>
+      <ion-icon class="tick-icon" name="checkmark-circle"></ion-icon>
+      <ion-card-title class="component-titles">Personal Details</ion-card-title
+      ><ion-icon
+        class="rightarrow-icon"
+        name="chevron-forward-outline"
+      ></ion-icon>
+    </ion-card-header>
+  </ion-card>
+  <!-- Current Address -->
+  <ion-card class="idc-card">
+    <ion-card-header>
+      <ion-icon class="tick-icon" name="checkmark-circle"></ion-icon>
+      <ion-card-title class="component-titles">Current Address</ion-card-title
+      ><ion-icon
+        class="rightarrow-icon"
+        name="chevron-forward-outline"
+      ></ion-icon>
+    </ion-card-header>
+  </ion-card>
+  <!-- Declaration -->
+  <ion-card class="idc-card">
+    <ion-card-header>
+      <ion-icon class="tick-icon" name="checkmark-circle"></ion-icon>
+      <ion-card-title class="component-titles">Declaration</ion-card-title
+      ><ion-icon
+        class="rightarrow-icon"
+        name="chevron-forward-outline"
+      ></ion-icon>
+    </ion-card-header>
+  </ion-card>
+</div>

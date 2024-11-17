@@ -1,0 +1,54 @@
+<div class="main">
+  <!-- Toolbar  -->
+  <ion-header [translucent]="true">
+    <ion-toolbar class="toolbar">
+      <!-- Back Button with Text -->
+
+      <ion-icon
+        name="arrow-back-outline"
+        class="back-icon"
+        (click)="back()"
+      ></ion-icon
+      ><span class="edit-bank">Add Bank Account Details</span>
+      <!-- Wallet and Notification -->
+      <div class="notification">
+        <span id="notify"
+          ><img src="assets/images/notification.png" alt=""
+        /></span>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <!-- Inputs -->
+  <ion-input
+    label="Account Number"
+    label-placement="floating"
+    fill="outline"
+    placeholder="Enter text"
+  ></ion-input>
+  <ion-input
+    label="Bank Name"
+    label-placement="floating"
+    fill="outline"
+    placeholder="Enter text"
+    style="margin-top: 10px"
+  ></ion-input>
+  <ion-input
+    label="IFSC Code"
+    label-placement="floating"
+    fill="outline"
+    placeholder="Enter text"
+    style="margin-top: 10px"
+  ></ion-input>
+  <ion-input
+    label="Name in Account"
+    label-placement="floating"
+    fill="outline"
+    placeholder="Enter text"
+    style="margin-top: 10px"
+  ></ion-input>
+  <!-- Save and Update button -->
+  <ion-button expand="block" color="dark" (click)="back()"
+    >Save & Update</ion-button
+  >
+  <!-- Main Container -->
+</div>

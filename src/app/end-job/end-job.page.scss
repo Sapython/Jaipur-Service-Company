@@ -1,0 +1,118 @@
+* {
+    font-family: 'Lato';
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mainContainer {
+    background-color: #F7F7F7;
+    height: 100%;
+    overflow-y: scroll;
+
+    .header {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        height: 60px;
+
+        .icon {
+            display: flex;
+
+            span {
+                margin-top: 5px;
+                margin-left: 4px;
+            }
+        }
+
+        .notification {
+            display: flex;
+
+            .wallet {
+                display: flex;
+                border: 1px solid rgb(215, 215, 215);
+                padding: 5px;
+                border-radius: 5px;
+                cursor: pointer;
+                height: 30px;
+            }
+
+            #notify {
+                margin-left: 10px;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .receipt {
+        background-color: #D9F2CF;
+        color: #579540;
+        font-size: 12px;
+        margin: 10px 15px;
+        height: 30px;
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    .installation {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .bio {
+            padding: 5px 0 0 10px;
+
+            h2 {
+                margin: 0;
+                font-size: 18px;
+            }
+
+            h6 {
+                margin: 0;
+                font-size: 12px;
+            }
+
+
+        }
+
+        .amount {
+            color: green;
+            font-size: 18px;
+            padding-top: 15px;
+        }
+    }
+
+    .user {
+        margin-top: 5px;
+        padding: 0px 10px;
+        border: 1px solid rgba(233, 233, 233, 1);
+        background-color: #fff;
+        padding-bottom: 10px;
+
+        h6 {
+            color: #000;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .amount {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+
+            span {
+                color: #000;
+                font-weight: bold;
+            }
+        }
+    }
+}

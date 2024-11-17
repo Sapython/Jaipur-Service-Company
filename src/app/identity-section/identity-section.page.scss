@@ -1,0 +1,74 @@
+* {
+  padding-top: 3px;
+  font-family: Lato;
+  cursor: pointer;
+}
+.main {
+  background-color: #f7f7f7;
+  height: 100%;
+  overflow-y: scroll;
+}
+.toolbar {
+  --background: #fff;
+  box-shadow: none;
+  margin-top: -8px;
+}
+.notification {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  margin-top: 5px;
+}
+.wallet {
+  display: flex;
+  border: 1px solid rgb(215, 215, 215);
+  padding: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 150px;
+  width: 82px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+#notify {
+  margin-left: 10px;
+  margin-top: -4px;
+  margin-right: 8px;
+}
+.back-icon {
+  width: 37px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #181f29;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 0;
+}
+.identity-verification {
+  color: var(--primary, #181f29);
+  font-size: 16px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 0;
+}
+.aadhar{
+  display: inline-block;
+ width: 150px;
+ height: 90px;
+ margin-left: 20px;
+}
+.pic-card{
+  width: 100%;
+  margin: 0px;
+  box-shadow: none;
+  margin-top: 2px;
+
+  background: #F7F7F7;
+}

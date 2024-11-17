@@ -1,0 +1,78 @@
+<div class="main">
+  <ion-header [translucent]="true">
+    <ion-toolbar class="toolbar">
+      <!-- Back Button with Text -->
+
+      <ion-icon
+        name="arrow-back-outline"
+        class="back-icon"
+        (click)="back()"
+      ></ion-icon
+      ><span class="Edit-pan">Add PAN details</span>
+      <!-- Wallet and Notification -->
+      <div class="notification">
+        <div class="wallet">
+          <ion-icon
+            name="wallet-outline"
+            style="
+              padding-top: 2px;
+              color: #181f29;
+              margin-left: 5px;
+              margin-top: -1px;
+              width: 20px;
+              height: 20px;
+              flex-shrink: 0;
+            "
+          ></ion-icon
+          >&nbsp;
+          <span
+            style="
+              color: #181f29;
+              font-size: small;
+              font-family: Lato;
+              font-weight: 600;
+              margin-top: 0px;
+              margin-left: 2px;
+            "
+            >₹1,560</span
+          >
+        </div>
+        <span id="notify"
+          ><img src="assets/images/notification.png" alt=""
+        /></span>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <!-- Take Picture -->
+  <div class="wrapper" (click)="takePicture()">
+    <b>Upload PAN</b>
+    <div class="ion-activatable ripple-parent rounded-rectangle">
+      <ion-icon
+        name="add-outline"
+        style="color: var(--tertiary, #5e0080); margin-top: -20px"
+      ></ion-icon>
+
+      <h6
+        style="
+          position: absolute;
+          margin-top: 30px;
+          color: var(--tertiary, #5e0080);
+          font-size: 12px;
+          font-family: Lato;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        "
+      >
+        Front Side
+      </h6>
+      <ion-ripple-effect></ion-ripple-effect>
+    </div>
+  </div>
+
+  <!-- Save and Update button -->
+  <ion-button expand="block" color="dark" (click)="back()"
+    >Save & Update</ion-button
+  >
+  <!-- Main container -->
+</div>

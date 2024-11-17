@@ -1,0 +1,52 @@
+<ion-content class="ion-padding">
+  <header>
+    <h3>Select Language</h3>
+    <img src="assets/images/language.png" alt="">
+  </header>
+
+  <!-- <body>
+    <ion-card (click)="language()">
+      <span class="language">English</span>
+      <span>
+        <nav><img src="assets/images/eng-1.png" alt=""></nav>
+        <nav><img src="assets/images/eng-2.png" alt=""></nav>
+      </span>
+    </ion-card>
+    <ion-card>
+      <span class="language">Hinglish</span>
+      <span>
+        <nav><img src="assets/images/hinglish-1.png" alt=""></nav>
+        <nav><img src="assets/images/hinglish-2.png" alt=""></nav>
+      </span>
+    </ion-card>
+    <ion-card>
+      <span class="language">Hindi</span>
+      <span>
+        <nav><img src="assets/images/hindi.png" alt=""></nav>
+      </span>
+    </ion-card>
+  </body> -->
+  
+  <div class="content">
+    <div class="card" [class.hovered]="isHovered"  (click)="language()">
+      <span class="language">English</span>
+      <span>
+        <nav><img src="assets/images/eng-1.png" alt=""></nav>
+        <nav><img src="assets/images/eng-2.png" alt=""></nav>
+      </span>
+    </div>
+    <div class="card" [class.hovered]="isHovered" (click)="language()">
+      <span class="language">Hinglish</span>
+      <span>
+        <nav><img src="assets/images/hinglish-1.png" alt=""></nav>
+        <nav><img src="assets/images/hinglish-2.png" alt=""></nav>
+      </span>
+    </div>
+    <div class="card" [class.hovered]="isHovered" (click)="language()">
+      <span class="language">Hindi</span>
+      <span>
+        <nav><img src="assets/images/hindi.png" alt=""></nav>
+      </span>
+    </div>
+  </div>
+</ion-content>

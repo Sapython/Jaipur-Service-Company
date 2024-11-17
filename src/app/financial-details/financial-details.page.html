@@ -1,0 +1,153 @@
+<div class="main">
+  <!-- Toolbar  -->
+  <ion-header [translucent]="true">
+    <ion-toolbar class="toolbar">
+      <!-- Back Button with Text -->
+
+      <ion-icon
+        name="arrow-back-outline"
+        class="back-icon"
+        (click)="back()"
+      ></ion-icon
+      ><span class="fin-title">Financial Details</span>
+      <!-- Wallet and Notification -->
+      <div class="notification">
+        <div class="wallet">
+          <ion-icon class="wallet-icon" name="wallet-outline"></ion-icon>&nbsp;
+          <span class="wallet-amount">₹1,560</span>
+        </div>
+        <span id="notify"
+          ><img src="assets/images/notification.png" alt=""
+        /></span>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="details">
+    <!-- Add GST -->
+    <ion-card-subtitle class="add-gst-sub">
+      <ion-item-divider class="divider">
+        <h6 style="margin-right: 90px">GST details</h6>
+        <h6
+          class="add-new"
+          style="
+            color: #5e0080;
+            margin-left: 83px;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.26px;
+          "
+          (click)="addGST()"
+        >
+          Add New
+        </h6>
+        <span
+          ><ion-icon
+            name="add-circle"
+            style="
+              color: #5e0080;
+              width: 18px;
+              height: 18px;
+              margin-top: -10px;
+              margin-left: 3px;
+            "
+            (click)="addGST()"
+          ></ion-icon
+        ></span>
+      </ion-item-divider>
+    </ion-card-subtitle>
+  </div>
+  <!-- Pan Details -->
+  <ion-card class="pan-card">
+    <ion-card-header>
+      <ion-card-title style="display: inline; float: left"
+        >PAN card details</ion-card-title
+      >
+      <span>
+        <ion-card-title class="pancard-title" (click)="editPan()"
+          >Edit<span
+            ><img
+              src="../../assets/images/Edit Square.png"
+              style="
+                vertical-align: bottom;
+                display: inline;
+                margin-left: 4px;
+              " /></span
+        ></ion-card-title>
+        <ion-card-subtitle style="float: left; display: inline"
+          >PAN</ion-card-subtitle
+        ></span
+      >
+      <span
+        ><ion-card-subtitle
+          style="float: right; display: inline; margin-top: -24px"
+          >DYPK4545D</ion-card-subtitle
+        ></span
+      >
+    </ion-card-header>
+  </ion-card>
+  <!-- Bank Details -->
+  <ion-card class="bank-card">
+    <ion-card-header>
+      <ion-card-title style="display: inline; float: left; margin-bottom: 10px"
+        >Bank account details</ion-card-title
+      >
+      <span>
+        <ion-card-title class="bankcard-title" (click)="editBank()"
+          >Edit<span
+            ><img
+              (click)="editBank()"
+              src="../../assets/images/Edit Square.png"
+              style="
+                vertical-align: bottom;
+                display: inline;
+                margin-left: 4px;
+              " /></span
+        ></ion-card-title>
+        <ion-card-subtitle style="float: left; display: inline"
+          >Account No.</ion-card-subtitle
+        ></span
+      >
+      <span
+        ><ion-card-subtitle
+          style="float: right; display: inline; margin-top: -24px"
+          >9598416554545</ion-card-subtitle
+        ></span
+      >
+      <span>
+        <ion-card-subtitle style="float: left; display: inline"
+          >Bank Name</ion-card-subtitle
+        ></span
+      >
+      <span
+        ><ion-card-subtitle
+          style="float: right; display: inline; margin-top: -24px"
+          >PAYTM PAYMENT BANK LTD</ion-card-subtitle
+        ></span
+      >
+      <span>
+        <ion-card-subtitle style="float: left; display: inline"
+          >IFSC Code</ion-card-subtitle
+        ></span
+      >
+      <span
+        ><ion-card-subtitle
+          style="float: right; display: inline; margin-top: -24px"
+          >PAYTM056636</ion-card-subtitle
+        ></span
+      >
+      <span>
+        <ion-card-subtitle style="float: left; display: inline"
+          >Name in Account</ion-card-subtitle
+        ></span
+      >
+      <span
+        ><ion-card-subtitle
+          style="float: right; display: inline; margin-top: -24px"
+          >VIKRANT SINGH</ion-card-subtitle
+        ></span
+      >
+    </ion-card-header>
+  </ion-card>
+  <!-- Main container -->
+</div>

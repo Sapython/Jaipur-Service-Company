@@ -1,0 +1,116 @@
+* {
+  padding-top: 3px;
+  font-family: Lato;
+}
+.toolbar {
+  --background: #fff;
+  box-shadow: none;
+  margin-top: -8px;
+}
+ion-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+ion-content {
+  --ion-background-color: #f0f0f0;
+  box-shadow: none;
+}
+ion-card {
+  display: inline-table;
+
+  overflow-y: scroll;
+  box-shadow: none;
+  width: 360px;
+  height: 134px;
+  margin-top: 10px;
+  border: 1px solid var(--line, #e9e9e9);
+}
+.job-title {
+  color: var(--primary, #181f29);
+  font-size: 16px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 0;
+}
+.back-icon {
+  width: 37px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #181f29;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 0;
+}
+
+.notification {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  margin-top: 5px;
+}
+.wallet {
+  display: flex;
+  border: 1px solid rgb(215, 215, 215);
+  padding: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 150px;
+  width: 82px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+#notify {
+  margin-left: 10px;
+  margin-top: -4px;
+  margin-right: 8px;
+}
+.booking {
+  .row-1,
+  .row-2,
+  .row-3,
+  .row-4 {
+    display: flex;
+    justify-content: space-between;
+
+    .head {
+      color: var(--primary, #181f29);
+      font-size: 12px;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .body {
+      color: var(--secondry-text-color, rgba(0, 0, 0, 0.55));
+      font-size: 12px;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: -10px;
+    }
+  }
+
+  h2 {
+    text-align: end;
+    margin-top: 10px;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  .row-3 {
+    margin-top: 8px;
+  }
+}
+.scroll-y {
+  padding-top: 60px;
+}

@@ -1,0 +1,176 @@
+<div class="mainContainer">
+  <!-- <ion-header [translucent]="true" style="height: 60px;"> -->
+  <!-- <ion-toolbar> -->
+  <!-- <ion-title style="display: flex;"><ion-icon name="arrow-back-outline" style="margin-right: 10px; padding-top: 5px;"></ion-icon>Login/SignUp<img src="assets/images/notification.png" alt=""></ion-title> -->
+
+  <div class="header" style="overflow-y: scroll">
+    <div class="icon">
+      <ion-icon
+        class="back-icon"
+        name="arrow-back-outline"
+        (click)="back()"
+      ></ion-icon>
+      <span class="job-title"> Job Details</span>
+    </div>
+
+    <div class="notification">
+      <div class="wallet" style="border-radius: 10px">
+        <ion-icon class="wallet-icon" name="wallet-outline"></ion-icon>&nbsp;
+        <span class="wallet-amount">₹1,560</span>
+      </div>
+      <span id="notify"
+        ><img src="assets/images/notification.png" alt=""
+      /></span>
+    </div>
+  </div>
+  <!-- </ion-toolbar> -->
+  <!-- </ion-header> -->
+
+  <div class="current">
+    <div>
+      <h6 class="date">15 March, 2022</h6>
+    </div>
+    <div>
+      <h6 class="booking-id">Booking ID - #JC4520</h6>
+    </div>
+  </div>
+
+  <div class="user">
+    <ion-card-subtitle style="display: flex; justify-content: space-between">
+      <ion-item-divider class="divider">
+        <h6 style="margin-right: 120px; font-size: 16px; font-weight: 500">
+          Job Details
+        </h6>
+        <h6
+          class="notStarted"
+          style="color: green; font-size: 12px; font-weight: 500"
+        >
+          Completed
+        </h6>
+      </ion-item-divider>
+    </ion-card-subtitle>
+
+    <!-- Details -->
+    <div class="details" *ngFor="let info of data">
+      <div class="row-1">
+        <span class="head">{{info.name}}</span>
+        <span class="head">Job Duration</span>
+      </div>
+      <div class="row-2">
+        <span class="body"
+          ><ion-icon name="call-outline" class="phone-icon"></ion-icon
+          >{{info.phone}}</span
+        >
+        <span class="body"
+          ><ion-icon name="time-outline" class="time-icon"></ion-icon
+          >{{info.duration}}</span
+        >
+      </div>
+      <div class="row-3">
+        <span class="head">Service Time</span>
+        <span class="head">Distance</span>
+      </div>
+      <div class="row-4">
+        <span class="body"
+          ><ion-icon name="time-outline" class="time-icon"></ion-icon
+          >{{info.servicetime}}</span
+        >
+        <span class="body"
+          ><ion-icon name="location-outline" class="location-icon"></ion-icon
+          >{{info.distance}}</span
+        >
+      </div>
+      <div class="row-5">
+        <span class="head">Address</span>
+        <ion-icon
+          name="map"
+          class="location-icon"
+          style="margin-right: 25px; color: #181f29; width: 24px; height: 24px"
+        ></ion-icon>
+      </div>
+      <div class="row-6">
+        <span class="address"
+          ><ion-icon name="location-outline"></ion-icon>4140 Parker Rd.
+          Allentown, New <br />
+          Mexico 31134</span
+        >
+        <span
+          class="body"
+          style="
+            font-weight: 500;
+            text-decoration: underline;
+            font-family: Lato;
+            color: #181f29;
+            margin-right: 5px;
+            margin-top: -10px;
+          "
+          >See on Map</span
+        >
+      </div>
+
+      <!-- Job start-end -->
+
+      <div class="row-7">
+        <span class="head">Job Started</span>
+        <span class="head">Job Ended</span>
+      </div>
+      <div class="row-8">
+        <span class="body"
+          ><ion-icon name="time-outline" class="time-icon"></ion-icon
+          >{{info.jobstarted}}</span
+        >
+        <span class="body"
+          ><ion-icon name="time-outline" class="time-icon"></ion-icon
+          >{{info.jobended}}</span
+        >
+      </div>
+
+      <div class="installation">
+        <div style="display: flex">
+          <img
+            src="assets/images/ac.png"
+            style="height: 50px; margin-top: 5px"
+          />
+          <div class="bio">
+            <h2 class="Ac-install">
+              AC Installation
+              <span
+                style="
+                  color: green;
+                  margin-left: 130px;
+                  font-size: 14px;
+                  font-weight: 700;
+                "
+                >₹1502</span
+              >
+            </h2>
+
+            <h6 class="ac-size">
+              1 Ton -1.5 Ton x2
+              <span class="ac-time">• 2 hr 20 min</span>
+            </h6>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-bottom: 1px solid #e9e9e9"></div>
+
+      <div class="row-9">
+        <span class="others">Others</span>
+      </div>
+      <div class="row-10">
+        <span class="fee">Convenience Fee</span>
+        <span class="charge" style="font-weight: 700">₹150</span>
+      </div>
+
+      <div style="border-bottom: 1px solid #e9e9e9; margin-top: 5px"></div>
+      <div class="row-11">
+        <span class="head">Total Value</span>
+        <span class="charge" style="font-weight: 700">₹1652</span>
+      </div>
+      <div class="row-12">
+        <span class="others" style="font-size: 12px">JC commission ₹160 </span>
+      </div>
+    </div>
+  </div>
+</div>

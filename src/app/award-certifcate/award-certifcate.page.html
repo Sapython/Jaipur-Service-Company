@@ -1,0 +1,87 @@
+<div class="main">
+  <ion-header [translucent]="true">
+    <ion-toolbar class="toolbar">
+      <!-- Back Button with Text -->
+
+      <ion-icon
+        name="arrow-back-outline"
+        class="back-icon"
+        (click)="back()"
+      ></ion-icon>
+      <!-- Wallet and Notification -->
+      <div class="notification">
+        <div class="wallet">
+          <ion-icon name="wallet-outline" class="wallet-icon"></ion-icon>&nbsp;
+          <span class="wallet-amount">₹1,560</span>
+        </div>
+        <span id="notify" (click)="back()"><h6>Save</h6></span>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <!-- Title card -->
+  <ion-card class="title-card">
+    <ion-card-title class="identity-verification">
+      Award & Certificate photos
+    </ion-card-title>
+    <ion-card-subtitle
+      style="
+        text-align: center;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+      "
+    >
+      5 Photos
+    </ion-card-subtitle>
+  </ion-card>
+  <!-- Take Picture -->
+  <div class="wrapper">
+    <div
+      class="ion-activatable ripple-parent rounded-rectangle"
+      (click)="takePicture()"
+    >
+      <ion-icon
+        name="add-outline"
+        style="color: var(--tertiary, #5e0080); margin-top: -20px"
+      ></ion-icon>
+
+      <h6 class="add-photo">Add Photo</h6>
+
+      <ion-ripple-effect></ion-ripple-effect>
+    </div>
+    <span style="display: inline-block; margin-top: -85px">
+      <ion-thumbnail
+        class="certificate-pics"
+        style="
+          display: inline-block;
+          margin-left: 105px;
+          width: 80px;
+          height: 83px;
+        "
+      >
+        <img alt="Silhouette of mountains" src="../../assets/images/C1.png" />
+      </ion-thumbnail>
+    </span>
+    <span style="display: inline-block; margin-top: -90px">
+      <ion-thumbnail
+        class="certificate-pics"
+        style="
+          display: inline-block;
+          margin-left: 210px;
+          width: 80px;
+          height: 83px;
+        "
+      >
+        <img alt="Silhouette of mountains" src="../../assets/images/C2.png" />
+      </ion-thumbnail>
+    </span>
+  </div>
+
+  <ion-thumbnail
+    class="certificate-pics"
+    style="margin-left: 30px; margin-top: 10px; width: 80px; height: 83px"
+  >
+    <img alt="Silhouette of mountains" src="../../assets/images/C3.png" />
+  </ion-thumbnail>
+  <!-- Main div -->
+</div>

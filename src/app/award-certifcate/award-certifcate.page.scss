@@ -1,0 +1,151 @@
+* {
+  padding-top: 3px;
+  font-family: Lato;
+  cursor: pointer;
+}
+.main {
+  background-color: #f7f7f7;
+  height: 100%;
+  overflow-y: scroll;
+}
+.toolbar {
+  --background: #fff;
+  box-shadow: none;
+  margin-top: -8px;
+}
+.notification {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  margin-top: 5px;
+}
+.wallet {
+  display: flex;
+  border: 1px solid rgb(215, 215, 215);
+  padding: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 150px;
+  width: 82px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+#notify {
+  margin-left: 15px;
+  margin-top: -17px;
+  margin-right: 8px;
+  color: var(--tertiary, #5E0080);
+}
+.back-icon {
+  width: 37px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #181f29;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 0;
+}
+.identity-verification {
+  color: var(--primary, #181f29);
+  font-size: 16px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  margin-top: 2px;
+  text-align: center;
+}
+.title-card{
+  margin-top: 3px;
+  width: 100%;
+  margin-left: 0px;
+  height: 60px;
+  box-shadow: none;
+  border: 1px solid var(--line, #E9E9E9);
+}
+
+// Take Picture
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  background: #f8e4ff;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+b {
+  width: 100%;
+  margin-top: -40px;
+  color: #181f29;
+
+  font-size: 15px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.ripple-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+
+  user-select: none;
+}
+
+.rounded-rectangle {
+  width: 250px;
+  height: 75px;
+  border-radius: 8px;
+}
+
+.add-title{
+  position: absolute;
+  margin-top: 30px;
+  color: var(--tertiary, #5e0080);
+  font-size: 12px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.wallet-icon{
+  padding-top: 2px;
+  color: #181f29;
+  margin-left: 5px;
+  margin-top: -1px;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.wallet-amount{
+  color: #181f29;
+  font-size: small;
+  font-family: Lato;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-left: 2px;
+}
+.add-photo{
+  position: absolute;
+  margin-top: 30px;
+  color: var(--tertiary, #5e0080);
+  font-size: 12px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

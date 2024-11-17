@@ -1,0 +1,93 @@
+* {
+    font-family: 'Lato';
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+        width: inherit;
+        margin-left: 12px;
+        font-size: 18px;
+    }
+
+    img {
+        margin: auto;
+    }
+
+}
+
+// .content{
+
+// .card {
+//     display: flex;
+//     justify-content: space-between;
+//     // margin-right: 35px;
+//     margin-bottom: 5px;
+//     margin-top: 5px;
+//     cursor: pointer;
+//     padding: 10px;
+//     height: 50px;
+//     background-color: rgba(245, 245, 245, 1);
+//     color: rgba(102, 102, 102, 1);
+//     border-radius: 5px;
+
+//     span {
+//         display: flex;
+
+//         img{
+//             height: 25px;
+//         }
+//     }
+
+//     .language {
+//         font-size: 12px;
+//         color: #000;
+//         margin-top: 6px;
+//     }
+// }
+
+// .card.ion-hover {
+//     background-color: #fff;
+//     color: #000;
+//     border: 1px solid #000;
+// }
+// }
+
+
+.content {
+    .card {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        cursor: pointer;
+        padding: 10px;
+        height: 50px;
+        background-color: rgba(245, 245, 245, 1);
+        color: rgba(102, 102, 102, 1);
+        border-radius: 5px;
+
+        span {
+            display: flex;
+
+            img {
+                height: 25px;
+            }
+        }
+
+        .language {
+            font-size: 12px;
+            color: #000;
+            margin-top: 6px;
+        }
+    }
+
+    .card.hovered {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+    }
+}

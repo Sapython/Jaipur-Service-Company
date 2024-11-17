@@ -1,0 +1,185 @@
+*{
+  font-family: 'Lato';
+}
+
+.mainContainer {
+  background-color: #F0F0F0;;
+  height: 100%;
+  overflow-y: scroll;
+
+  .header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+
+    .notification {
+      display: flex;
+
+      .wallet {
+        display: flex;
+        border: 1px solid rgb(215, 215, 215);
+        padding: 3px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-left: 150px;
+        width: 82px;
+        height: 30px;
+        flex-shrink: 0;
+        color: #181f29;
+      }
+
+      #notify{
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+
+  }
+
+
+  .wish{
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF6E0;
+
+    .time{
+      width: fit-content;
+      padding-top: 8px;
+
+      h2{
+        margin: 0;
+        color: #181f29;
+      }
+    }
+
+    .logo{
+      width: fit-content;
+    }
+  }
+
+  .today{
+    background-color: #fff;
+    padding: 20px;
+    color: #181f29;
+
+    .day-date{
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+      margin: 8px 0;
+
+      .from{
+
+        h4{
+          margin: 0;
+          font-size: 18px;
+        }
+
+        h6{
+          margin: 0;
+          font-size: 12px;
+          color: green;
+        }
+
+      }
+
+      .to{
+
+        h4{
+          margin: 0;
+          font-size: 18px;
+        }
+
+        h6{
+          margin: 0;
+          font-size: 12px;
+          color: green;
+        }
+
+      }
+
+      span{
+        font-size: 25px;
+      }
+    }
+  }
+
+  .today-jobs{
+    margin: 5px 0;
+    background-color: #fff;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    padding: 20px;
+    cursor: pointer;
+    color: #181f29;
+  }
+
+  .new-jobs{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 20px;
+    height: 50px;
+    color: #181f29;
+
+    div{
+      margin: 0;
+    }
+
+    h6{
+      margin-top: 5px;
+      color: rgba(94, 0, 128, 1);
+
+    }
+
+    h2{
+      margin: 0;
+    }
+  }
+
+  .booking{
+    .row-1, .row-2, .row-3, .row-4{
+      display: flex;
+      justify-content: space-between;
+
+      .head{
+        color: #000;
+      }
+
+      .body{
+        color: rgba(0, 0, 0, 0.55);
+      }
+    }
+
+    h2{
+      text-align: end;
+      margin-top: 10px;
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    .row-3{
+      margin-top: 8px;
+    }
+  }
+}
+
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+ion-icon {
+  cursor: pointer;
+}
+.menu{
+  font-size: xx-large;
+  columns: #444 !important;
+  cursor: pointer;
+}
